@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones de Clientes - Blog</title>
+    <link rel="stylesheet" href="stylesPrincipalCont.css">
+    <link rel="stylesheet" href="stylesBlog.css">
+    <link rel="stylesheet" href="stylePiePagina.css">
+    <link rel="stylesheet" href="styleEncabezado.css">
+    <link rel="stylesheet" href="styleOpinionesBlog.css"> 
+</head>
+<body>
+    <!-- Encabezado de la pagina -->
+    <header>
+        <div class="logo">
+            <img src="Logo.jpeg" alt="Logo El Flip">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form id="searchForm">
+                <input type="text" id="busqueda" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <section class="article-section">
+            <div class="container">
+                <article class="blog-post">
+                    <h1>Opiniones de Clientes sobre El Flip</h1>
+                    <p class="publish-date">Fecha de publicación: <time datetime="2024-06-26">26 de Junio de 2024</time></p>
+                    <div class="article-content">
+                        <h2>¿Qué opinan las personas de nuestro producto?</h2>
+                        div class="video-link">
+                            <a href="https://www.instagram.com/reel/CwGxgpdOKmQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Primeras Impresiones </a>
+                        </div>
+                        <p>
+                            En El Flip, nos enorgullecemos de ofrecer productos de la más alta calidad. Aquí te compartimos algunas de las opiniones de nuestros clientes satisfechos:
+                        </p>
+
+                        <!-- Enlaces a videos de las opiniones de clientes -->
+                        <div class="video-link">
+                            <a href="https://www.instagram.com/reel/CnQKVS0MEN8/?utm_source=ig_web_copy_link" target="_blank">Opinión de La Parrilla Callejera </a>
+                        </div>
+                        <div class="video-link">
+                            <a href="https://www.instagram.com/reel/C1R6ZZ4Orad/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Opinión de Gubser Ticino</a>
+                        </div>
+                        <div class="video-link">
+                            <a href="https://www.instagram.com/reel/Cv5CC10u9J7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Opinión de Bogo</a>
+                        </div>
+                        <div class="video-link">
+                            <a href="https://www.instagram.com/reel/CovX1-nrn6W/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Opinión de Café Aranjuez </a>
+                        </div>
+                        
+                        <h2>¿Qué es El Flip?</h2>
+                        <p>
+                            El Flip es una panadería artesanal que se especializa en la elaboración de panes de alta calidad, utilizando ingredientes frescos y técnicas tradicionales. Nos enfocamos en ofrecer productos que no solo sean deliciosos, sino también saludables y elaborados con cuidado. Nuestros clientes valoran la dedicación y pasión que ponemos en cada pieza de pan que producimos.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Seccion de Comentarios -->
+                <section class="comments-section">
+                    <h2>Deja tu comentario</h2>
+                    <form class="comment-form">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" name="comment" rows="5" required></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pag -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="Logo.jpeg" alt="Logo El Flip">
+                <p>Pan que da ritmo<br>Pan que da sabor</p>
+            </div>
+            <div class="contact-info">
+                <p>Teléfono: +506 8348 7980</p>
+                <p>Correo Electrónico: yulianovargas03@gmail.com</p>
+                <p>Dirección: Costa Rica. Ruta 108 - San Francisco, Goicoechea</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/elflipcr?mibextid=LQQJ4d" target="_blank"><img src="facebook.png" alt="Facebook" class="social-icon"> Facebook</a>
+                <a href="https://www.instagram.com/elflip506/" target="_blank"><img src="logotipo-de-instagram.png" alt="Instagram" class="social-icon"> Instagram</a>
+                <a href="https://wa.me/50683487980" target="_blank"><img src="whatsApp.png" alt="WhatsApp" class="social-icon"> WhatsApp</a>
+                <a href="https://waze.com/ul?ll=9.94071,-84.07328&navigate=yes" target="_blank"><img src="waze.png" alt="Waze" class="social-icon"> Waze</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EL FLIP. Todos los derechos reservados</p>
+            <p><a href="#">Términos & Condiciones</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

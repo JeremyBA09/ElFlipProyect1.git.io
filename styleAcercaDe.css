@@ -1,0 +1,52 @@
+
+#acerca-de {
+    background-color: #333333 ; /* Fondo claro */
+    padding: 80px 0; /* Espaciado interno */
+    text-align: center; /* Alineacinn del contenido */
+    color: #F6F6F6; /* color texto principal */
+}
+
+#acerca-de h2 {
+    color: #FFC107; /* Color dorado para el titulo */
+    font-size: 2.5rem; 
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.informacion-autor {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    flex-wrap: wrap; /* modo respnsive  */
+}
+
+.autor-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.autor-info h3 {
+    color: #FFC107; /* Color dorado para el subtitulos */
+    font-size: 2rem;
+    margin-bottom: 20px; 
+}
+
+.autor-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.autor-info ul li {
+    font-size: 1.1rem; /* Tamaño del texto de la lista */
+    margin-bottom: 10px; /* Espacio entre elementos de list */
+}
+
+.autor-foto img {
+    max-width: 200px; /* Ancho maximo de la img */
+    height: auto; /* La Altura automatica */
+    border-radius: 50%; /* Borde redondeado para forma circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Esta es la sombra suave */
+    margin-top: 20px; /* Es el Espacio superior */
+}
+

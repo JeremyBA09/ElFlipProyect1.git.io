@@ -1,0 +1,126 @@
+
+#productos {
+    background-color: #333333; 
+    color: #FFFFFF; 
+    padding: 60px 0; /* Relleno interior */
+    text-align: center; /* Alineacion central del cont */
+}
+
+#productos h2 {
+    color: #FFD700; 
+    font-size: 2.5rem; 
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+/* Estilo Ventajas y Caractersticas */
+.ventajas-caracteristicas {
+    max-width: 800px; /* Ancho maximo para el contenido */
+    margin: 0 auto 50px; /* Centrado y espacio inferior */
+    padding: 20px; /* Relleno interno */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco casi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: left; 
+}
+
+.ventajas-caracteristicas h3 {
+    color: #FFD700;
+    font-size: 2rem; 
+    margin-bottom: 20px; /* Espacio inferior */
+    text-align: center; 
+}
+
+.ventajas-caracteristicas ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0;
+}
+
+.ventajas-caracteristicas ul li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    font-size: 1.1rem; 
+}
+
+.ventajas-caracteristicas p {
+    margin-bottom: 10px; /* Espacio inferior */
+    font-size: 1rem;
+}
+
+.ventajas-caracteristicas a {
+    color: #FFD700;
+    text-decoration: none; /* Sin subrayado */
+    border-bottom: 1px solid #FFD700; /* Borde inferior dorado solido */
+    transition: border-bottom 0.3s ease; /* Transicion al suave del borde */
+}
+
+.ventajas-caracteristicas a:hover {
+    border-bottom: 1px solid transparent; /* Ocultar borde al pasar el cursor */
+}
+
+/* Estilo galeria img */
+.galeria {
+    max-width: 1000px; /* Ancho maximo para la galeria */
+    margin: 0 auto 50px; /* Centrado y espacio inferior */
+}
+
+.galeria h3 {
+    color: #FFD700; 
+    font-size: 2rem; 
+    margin-bottom: 20px; /* Espacio inferior */
+    text-align: center; /* Alineación central del título */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ya las Columnas automaticas ajustables */
+    gap: 30px; /* Espacio entre elementos */
+    justify-content: center; /* Centrar las columnas */
+}
+
+.grid-container .item {
+    text-align: center; 
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar contenido adicional de las imgs */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.grid-container .item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transicion al suave */
+}
+
+.grid-container .item:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar cursor */
+}
+
+.grid-container .item p {
+    padding: 15px; /* Relleno interno */
+    background-color: rgba(255, 255, 255, 0.8); 
+    margin: 0;
+    font-size: 1rem; 
+}
+
+/* Estilo video presentacion */
+.video-presentacion .links {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; /* Espacio entre los enlaces */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.video-presentacion .links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: #FFD700;
+    text-decoration: none; /* Sin subrayado */
+    transition: transform 0.3s ease; /* Transicion al suave */
+}
+
+.video-presentacion .links a:hover {
+    transform: translateY(-5px); /* Efecto de que se levante al pasar el cursor */
+}
+
+.video-presentacion .links a img {
+    
+    margin-bottom: 10px; /* Espacio entre el icono y el texto */
+}

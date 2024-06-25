@@ -1,0 +1,80 @@
+
+#preguntas-frecuentes {
+    background-color: #333333; 
+    color: #FFFFFF; 
+    padding: 80px 0; /* Espaciado interno */
+    text-align: center; /* Alineacion del contenido */
+}
+
+#preguntas-frecuentes h2 {
+    color: #FFC107; 
+    font-size: 2.5rem; 
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+#preguntas-frecuentes p {
+    font-size: 1.2rem; 
+    margin-bottom: 40px; 
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto; /* Centramos el acordeón */
+    text-align: left; /* Alineacion izquierda para que se vea mejor */
+}
+
+.faq-item {
+    background-color: #444444; 
+    margin-bottom: 10px; /* Espacio entre preguntas */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.faq-question {
+    display: block; /* se ve como un bloque para ocupar todo el ancho */
+    background-color: #444444; 
+    color: #FFC107; 
+    cursor: pointer; /* Hcaer que el curso sea una manita al pasar el cursor */
+    padding: 15px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    border: none; /* Sin bordes */
+    text-align: left; 
+    font-size: 1.2rem; /* Tamaño del texto */
+    transition: background-color 0.3s ease; /* Transicion al suave */
+}
+
+.faq-question:hover {
+    background-color: #555555; /* Cambio de color al pasar el cursor */
+}
+
+.faq-answer {
+    background-color: #555555; 
+    color: #FFFFFF; 
+    padding: 15px; /* Espaciado interno */
+    display: none; /* Ocultos inicialmente */
+    border-top: 1px solid #666666; /* Borde superior */
+}
+
+.faq-answer p {
+    margin: 0; /* Sin  lso margenes  */
+}
+
+.faq-answer a {
+    color: #FFC107; 
+    text-decoration: none; /* Sin subrayado */
+    border-bottom: 1px solid #FFC107; /* Borde inferior dorado */
+    transition: border-bottom 0.3s ease; /* Transicion al suave */
+}
+
+.faq-answer a:hover {
+    border-bottom: 1px solid transparent; /* Quitar borde al pasar el cursor */
+}
+
+/* Muestra la  respuesta cuando el input está marcado */
+.faq-item input[type="checkbox"]:checked + .faq-question + .faq-answer {
+    display: block; /* Mostrar respuesta */
+}
+
+/* Ocultar los checkbox */
+.faq-item input[type="checkbox"] {
+    display: none;
+}

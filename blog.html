@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - El Flip</title>
+    <link rel="stylesheet" href="stylesPrincipalCont.css">
+    <link rel="stylesheet" href="stylesBlog.css">
+    <link rel="stylesheet" href="stylePiePagina.css">
+    <link rel="stylesheet" href="styleEncabezado.css">
+   
+</head>
+<body>
+    <!-- Encabezado de la pag -->
+    <header>
+        <div class="logo">
+            <img src="Logo.jpeg" alt="Logo El Flip">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                
+            </ul>
+        </nav>
+        <!-- la misma barra de busqueda  -->
+        <div class="search-bar">
+            <form id="searchForm">
+                <input type="text" id="busqueda" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+   <!-- Contenido Principal (Blog) -->
+   <main class="main-content">
+
+
+    <section class="blog-section">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="content-wrapper">
+              
+                <!-- Barra Lateral -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3>Producto más cotizado</h3>
+                        <a href="https://www.instagram.com/reel/CtUjIyLOyCH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                            <img src="MasaMadre2.png" alt="Producto más cotizado">
+                        </a>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>Consideraciones</h3>
+                        <img src="Consideraciones.png" alt="Consideraciones">
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>Rutas de envíos y costos</h3>
+                        <a href="https://drive.google.com/file/d/1MOaRoX9Em2TkPzlKgi9CXBqQPvq-g2Xu/view" target="_blank">
+                            Ver rutas de envíos y costos en Google Drive
+                        </a>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Opiniones de nuestros clientes</h3>
+                        <a href="https://www.instagram.com/reel/CudKHJ2uttt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                            Ver video 
+                        </a>
+                    </div>
+                </aside>
+                
+
+                <!-- Articulos de Blog. El <article> encapsula toda la informacion relacionada con un unico post de blog, lo que lo hace facil de identificar -->
+                <div class="blog-content">
+                    <section id="elaboracion-pan">
+                        <h3>Elaboración del Pan Flip</h3>
+                        <article class="blog-post">
+                            <h4>El Proceso de Elaboración del Pan Flip</h4>
+                            <p>Aquí encontrarás una guía detallada con imágenes y videos del proceso...</p>
+                            <a href="categoriaElaboracionBlog.html" class="read-more">Leer más</a>
+                        </article>
+                    </section>
+
+                    <section id="consideraciones">
+                        <h3>Consideraciones</h3>
+                        <article class="blog-post">
+                            <h4>Consideraciones al Consumir Pan Artesanal</h4>
+                            <p>Descubre algunas consideraciones importantes...</p>
+                            <a href="categoriaConsiBlog.html" class="read-more">Leer más</a>
+                        </article>
+                    </section>
+
+                    <section id="rutas-envio">
+                        <h3>Rutas de Envíos y Costos</h3>
+                        <article class="blog-post">
+                            <h4>Enviamos a toda Costa Rica</h4>
+                            <p>Fecha de publicación: <time datetime="2024-06-18">18 de Junio de 2024</time></p>
+                            <p>Consulta nuestras opciones de envío y costos...</p>
+                            <a href="categoriaRutasBlog.html" class="read-more">Leer más</a>
+                        </article>
+                    </section>
+
+                    <section id="opiniones">
+                        <h3>Opiniones de Clientes</h3>
+                        <article class="blog-post">
+                            <h4>Opiniones sobre nuestros productos</h4>
+                            <p>Lee lo que dicen nuestros clientes sobre nuestros productos...</p>
+                            <a href="categoriaOpinionesBlog.html" class="read-more">Leer más</a>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <!-- Pie de pag siempre el moismo -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="Logo.jpeg" alt="Logo El Flip">
+                <p>Pan que da ritmo<br>Pan que da sabor</p>
+            </div>
+            <div class="contact-info">
+                <p>Teléfono: +506 8348 7980</p>
+                <p>Correo Electrónico: yulianovargas03@gmail.com</p>
+                <p>Dirección: Costa Rica. Ruta 108 - San Francisco, Goicoechea</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/elflipcr?mibextid=LQQJ4d" target="_blank"><img src="facebook.png" alt="Facebook" class="social-icon"> Facebook</a>
+                <a href="https://www.instagram.com/elflip506/" target="_blank"><img src="logotipo-de-instagram.png" alt="Instagram" class="social-icon"> Instagram</a>
+                <a href="https://wa.me/50683487980" target="_blank"><img src="whatsApp.png" alt="WhatsApp" class="social-icon"> WhatsApp</a>
+                <a href="https://waze.com/ul?ll=9.94071,-84.07328&navigate=yes" target="_blank"><img src="waze.png" alt="Waze" class="social-icon"> Waze</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EL FLIP. Todos los derechos reservados</p>
+            <p><a href="#">Términos & Condiciones</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

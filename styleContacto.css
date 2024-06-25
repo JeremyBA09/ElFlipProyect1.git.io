@@ -1,0 +1,142 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-content {
+    padding: 40px 0;
+}
+
+/* Estilos Contacto */
+#contacto {
+    background-color: #333333; 
+    color: #333333 ; 
+    padding: 60px 0; /* Relleno interior */
+    text-align: center; 
+}
+
+#contacto h2 {
+    color: #FFD700; 
+    font-size: 2.5rem; 
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.informacion-contacto {
+    max-width: 600px; /* Ancho maximo para el contenido */
+    margin: 0 auto 40px; /* El Margen inferior y centrado horizontal */
+    background-color: #FFFFFF; 
+    padding: 20px; /* Relleno interior */
+    border-radius: 10px; /* Los Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*La Sombra suave */
+    text-align: left;
+}
+
+.informacion-contacto h3 {
+    color: #FFD700; 
+    font-size: 2rem; 
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.informacion-contacto ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0;
+}
+
+.informacion-contacto ul li {
+    font-size: 1.1rem; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+
+/* Estilos formulario contacto */
+.formulario-contacto {
+    max-width: 600px; /* Ancho maximo para el formulario */
+    margin: 0 auto; /* Centrado horizontal */
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 20px; /* Relleno interior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* La  Sombra suave */
+    text-align: left;
+}
+
+.formulario-contacto h3 {
+    color: #FFD700; 
+    font-size: 2rem; 
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.formulario-contacto .input-group {
+    width: 100%;
+    max-width: 500px; /* Ancho maximo para los campos */
+    margin-bottom: 20px; /* Espacio inferior entre grupos */
+}
+
+.formulario-contacto .input-group label {
+    display: block;
+    font-size: 1.1rem; /* Tamaño del texto */
+    margin-bottom: 5px; /* Espacio inferior */
+    color: #333333; /* Texto negro */
+}
+
+.formulario-contacto .input-group input,
+.formulario-contacto .input-group textarea,
+.formulario-contacto .input-group select {
+    width: 100%;
+    padding: 10px; /* Relleno interno */
+    font-size: 1rem; /* Tamaño del texto */
+    border: 1px solid #CCCCCC; /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s ease; /* Transicion suave del color del borde */
+}
+
+.formulario-contacto .input-group input:focus,
+.formulario-contacto .input-group textarea:focus,
+.formulario-contacto .input-group select:focus {
+    border-color: #FFD700; /* Cambia el color del borde al enfocar */
+    outline: none; /* Quita el contorno al enfocar */
+}
+
+.formulario-contacto button {
+    width: 200px;
+    padding: 10px; /* Relleno interno */
+    background-color: #FFD700; 
+    color: #333333; 
+    font-size: 1.1rem; 
+    border: none; 
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transicion al suave del color de fondo */
+}
+
+.formulario-contacto button:hover {
+    background-color: #FFA500; 
+}
+
+.formulario-contacto label {
+    font-size: 1rem; 
+    color: #333333; 
+}
+
+.formulario-contacto input[type="checkbox"],
+.formulario-contacto input[type="radio"] {
+    margin-right: 10px; /* Espacio entre checkbox y radio */
+    vertical-align: middle; 
+}
+
+.formulario-contacto fieldset {
+    border: 1px solid #CCCCCC; /* Borde del fieldset */
+}

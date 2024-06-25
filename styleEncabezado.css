@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /* Para incluir el relleno y borde en el ancho y alto */
+    background-color: #000000; 
+    color: #FFFFFF; 
+}
+
+/* Estilo encabezado */
+header {
+    display: flex; /* Usar flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; 
+    background-color: #808080; 
+    padding: 10px 20px; /* Relleno */
+    border-bottom: 1px solid #FFD700; /* Borde dorado en la parte inferior */
+}
+
+.logo img {
+    height: 100px; 
+}
+
+/* Estilo navegacion */
+nav ul {
+    list-style: none; 
+    display: flex; /* Usar flexbox */
+    gap: 20px; /* Espacio entre enlaces */
+}
+
+nav a {
+    text-decoration: none; /* Sin subrayado */
+    color: #FFFFFF; 
+    padding: 5px 10px; 
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo cuando paso el curos por los enlaces  */
+nav a:hover {
+    background-color: #FFD700; 
+    color: #000000; 
+}
+
+.search-bar input {
+    padding: 5px; /* Relleno */
+    border: 1px solid #ddd; 
+    border-radius: 5px; /* Bordes redondeados */
+}

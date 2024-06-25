@@ -1,0 +1,20 @@
+
+.btn {
+    display: inline-block; /* Aqui lo muestro como bloque en linea */
+    padding: 10px 20px; /* el relleno */
+    background-color: #FFD700; 
+    color: #000000; 
+    text-decoration: none; /* no quiero subrayado */
+    border-radius: 5px; /* Y los bordes redondeados */
+    transition: background-color 0.3s ease; /* con eso hago la transicion al suave */
+}
+
+.btn:hover {
+    background-color: #FFFFFF; /* el fondo blanco al pasar el cursor */
+    color: #000000;
+}
+
+.btn-container {
+    margin-top: 20px;
+    text-align: center;
+}

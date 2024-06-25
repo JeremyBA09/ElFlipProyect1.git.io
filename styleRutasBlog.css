@@ -1,0 +1,87 @@
+
+.article-content {
+    margin-top: 20px;
+}
+
+.article-content h2 {
+    color: #FFD700; 
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 5px;
+}
+
+.article-content p {
+    color: black; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.article-content ul,
+.article-content ol {
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.article-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.video-link {
+    display: block;
+    margin: 20px 0;
+    color: #FFD700; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo seccion comentarios */
+.comments-section {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #FFD700; 
+}
+
+.comments-section h2 {
+    color: #FFD700; 
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white
+}
+
+.comment-form input, .comment-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.comment-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFD700; 
+    color: #000000; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #b38e00; 
+}

@@ -1,0 +1,121 @@
+
+
+.section {
+    background-color: #333333; 
+    color: #FFFFFF; 
+    padding: 30px; 
+    margin-bottom: 20px; 
+    border: 2px solid #444; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mas pronunciada */
+    text-align: center; 
+    position: relative; /* Para poder añadir pseudo-elementos */
+}
+
+ul {
+    padding-left: 20px; 
+}
+
+li {
+    margin-bottom: 10px; /* Espacio entre cada item de la lista */
+}
+ul {
+    list-style-type: none;
+}
+
+/* Pseudo-elemento para los detalles dorados */
+.section::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px solid #FFD700;
+    border-radius: 12px; /* Bordes redondeados mas grandes */
+    z-index: -1; /* Detrás del contenido */
+}
+
+.section h2 {
+    margin-bottom: 20px; /* Margen inferior */
+    color: #FFD700; /* Texto dorado */
+}
+
+.section p {
+    line-height: 1.6; /* Altura de linea */
+}
+
+
+/* Estilo del banner */
+.banner {
+    background-color: #333333; 
+    color: #FFFFFF; 
+    padding: 50px 20px; /* Relleno */
+    text-align: center; 
+}
+
+.banner h1 {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.banner p {
+    color: #FFD700; 
+}
+
+.banner-images {
+    display: flex; /* Uso flexbox */
+    justify-content: center; /* Centrar imgs */
+    gap: 20px; /* Espacio entre imgs */
+    margin-top: 20px; /* Margen superior */
+}
+
+.banner-images img {
+    width: 200px; /* Ancho de las imgs */
+    height: auto; 
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+
+
+/* Estilo sobre la empresa */
+.about {
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 50px 20px; /* Relleno */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo de las tarjetas de información */
+.cards {
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    margin-top: 20px; /* Margen superior */
+}
+
+.card {
+    background-color: #333333; /* Fondo gris oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 20px; /* Relleno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 300px; /* Ancho de las tarjetas */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.card h3 {
+    color: #FFD700; /* Texto dorado */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.card p {
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.card img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    margin-top: 10px; /* Margen superior */
+    border-radius: 10px; /* Bordes redondeados */
+}

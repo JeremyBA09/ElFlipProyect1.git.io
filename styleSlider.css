@@ -1,0 +1,85 @@
+
+.image-slider {
+    position: relative; 
+    max-width: 100%; /* Establece el ancho maxiimo del slider al 100% del contenedor papa */
+    overflow: hidden; /* Oculta el contenido que se desborde del slider */
+}
+
+/* Estilos contenedor almacena  diapositivas de imgs */
+.slides {
+    display: flex; /* Organiza las diapositivas en una fila */
+    transition: transform 0.5s ease; /* Transicion suave al desplazar las diapositivas */
+}
+
+/* Estilos diapositiva individual */
+.slide {
+    min-width: 100%; /*  ancho completo del contenedor */
+    flex: 1 0 100%; /*  todo el espacio disponible sin hacerse peque ni crecer, ocupando el 100% del ancho */
+    display: flex; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra horizontalmente el contenido de la diapositiva */
+    align-items: center; /* Centra verticalmente el contenido de la diapositiva */
+    position: relative; /* Posiciona elementos secundarios dentro de la diapositiva */
+}
+
+/* Estilos imgs dentro de las diapositivas */
+.slider-image {
+    display: block; /* Muestra las imgs como bloques */
+    max-width: 100%; /* ancho máximo de la imagen al 100% del contenedor */
+    max-height: 200px; /* altura máxima de la imag a 200px */
+    object-fit: contain; /* Ajusta la img dentro de su contenedor manteniendo la relacion de aspecto */
+    opacity: 0; /* Hace que las imgs sean invisibles */
+    transition: opacity 0.5s ease; /* Transicion al suave para la opacidad */
+}
+
+/* Estilos para la imagen activa (visible) en el slider */
+.slider-image.active {
+    opacity: 1; /* Hace que la imagen activa sea completamente visible */
+}
+
+/* Estilos contenedor flechas de naveg */
+.slider-arrows {
+    position: absolute; /* Posiciona las flechas de manera absoluta */
+    top: 50%; /* Coloca las flechas en la mitad superior del contenedor */
+    transform: translateY(-50%); /* Centra verticalmente las flechas */
+    width: 100%; /* Las flechas ocupan todo el ancho disponible */
+    display: flex; /* Organiza las flechas en una fila */
+    justify-content: space-between; /* Distribuye las flechas uniformemente con espacio entre ellas */
+    pointer-events: none; /* Desactiva los eventos en las flechas */
+}
+
+/* Estilos flechas de navegacion */
+.arrow {
+    cursor: pointer; /* Manita cuando se coloca sobre las flechas */
+    font-size: 30px; /* Tamaño del ícono de flecha */
+    background: rgba(255, 255, 255, 0.5); 
+    padding: 10px; /* Espacio alrededor de las flechas */
+    border-radius: 50%; /* Bordes redondeados para las flechas */
+    pointer-events: auto; /* Reactiva la interacción de eventos para las flechas */
+}
+
+/* Estilos flecha de navegacion hacia la izquierda */
+.arrow.prev {
+    margin-left: 10px; /* Ajusta el margen izquierdo para separar la flecha de la imag */
+}
+
+/* Estilos flecha de navegacion hacia la derecha */
+.arrow.next {
+    margin-right: 10px; /* Ajusta el margen derecho para separar la flecha de la imagen */
+}
+
+/* Oculta los radios */
+.slider-radio {
+    display: none;
+}
+
+/* Selector para la primera diapositiva activa */
+#slide1:checked ~ .slides {
+    transform: translateX(0%); /* Desplaza las diapositivas hacia la primera posición */
+}
+
+/* Selector para la segunda diapositiva activa */
+#slide2:checked ~ .slides {
+    transform: translateX(-100%); /* Desplaza las diapositivas hacia la segunda posición */
+}
+
+

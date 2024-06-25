@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>El Flip</title> 
+    <link rel="stylesheet" href="stylesPrincipalCont.css">
+    <link rel="stylesheet" href="styleNosotros.css"> 
+    <link rel="stylesheet" href="styleboton.css"> 
+    <link rel="stylesheet" href="styleSlider.css"> 
+    <link rel="stylesheet" href="stylePiePagina.css"> 
+    <link rel="stylesheet" href="styleEncabezado.css"> 
+    <link rel="stylesheet" href="styleProductosServicios.css"> 
+    <link rel="stylesheet" href="styleContacto.css"> 
+    <link rel="stylesheet" href="stylePreguntasFrecuentes.css"> 
+    <link rel="stylesheet" href="styleAcercaDe.css"> 
+</head>
+<body>
+    <!-- Encabezado de la pagina -->
+    <header>
+        <div class="logo">
+            <img src="Logo.jpeg" alt="Logo El Flip"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li> 
+                <li><a href="#nosotros">Nosotros</a></li> 
+                <li><a href="#productos">Productos / Servicios</a></li> 
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li> 
+                <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li> 
+                <li><a href="#acerca-de">Acerca de</a></li>
+            </ul>
+        </nav>
+       
+        <!-- Barra de busqueda intentando que funcione con js como nos dijo la profe el miercoles pasado -->
+        <div class="search-bar">
+            <form id="searchForm">
+                <input type="text" id="busqueda" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+    </header>
+
+    <!-- Contenido principal de la pagina -->
+   <main class="main-content">
+
+    <!-- Sección "Inicio" -->
+    <section id="inicio" class="section">
+        <div class="container">
+
+            <!-- Contenido principal de la seccion -->
+            <div class="section-content">
+                <h2>Bienvenido a El Flip</h2>
+                <p>Somos una empresa dedicada a la elaboración artesanal de pan con más de 20 años de experiencia.</p>
+                    <p> Nuestro compromiso es ofrecer productos frescos y de alta calidad, libres de aditivos.</p>
+                <ul>
+                    <li><strong>Calidad:</strong> Panes elaborados con ingredientes naturales y frescos.</li>
+                    <li><strong>Variedad:</strong> Diferentes tipos de panes artesanales para todos los gustos.</li>
+                    <li><strong>Servicio:</strong> Compromiso con la satisfacción y salud de nuestros clientes.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Slider de las imagenes -->
+<div class="image-slider">
+    <input type="radio" name="slider" id="slide1" class="slider-radio" checked>
+    <input type="radio" name="slider" id="slide2" class="slider-radio">
+    <input type="radio" name="slider" id="slide3" class="slider-radio">
+    
+    <div class="slides">
+        <div class="slide">
+            <img class="slider-image active" src="Captura de productos del flip.jpeg" alt="Captura de productos del flip">
+        </div>
+        <div class="slide">
+            <img class="slider-image active " src="Producto Fresco.png" alt="Productos frescos del Flip">
+        </div>
+        
+    </div>
+    
+    <!-- Las Flechas del slider -->
+    <div class="slider-arrows">
+        <label for="slide1" class="arrow prev">&#10094;</label>
+        <label for="slide2" class="arrow next">&#10095;</label>
+    </div>
+</div>
+        <!-- Contenedor del boton, esto me va mandar de una vez a los productos, es una estrategia ya que las personas quieren ver los prudctos de una vez -->
+        <div class="btn-container">
+            <a href="#productos" class="btn">Conoce nuestros productos</a>
+        </div>
+    </section>
+
+
+ <!-- Seccion "Nosotros" -->
+ <section id="nosotros" class="section">
+    <div class="container">
+        <div class="section-content">
+            <h2>Nosotros</h2>
+            <div class="table-container">
+                <table class="info-table">
+                    <tr>
+                        <th>Organización</th>
+                        <td>Estructuramos nuestros recursos y funciones para alcanzar nuestros objetivos de manera eficiente y efectiva.</td>
+                    </tr>
+                    <tr>
+                        <th>Valores de nuestra empresa</th>
+                        <td>
+                            <ul>
+                                <li><strong>Respeto:</strong> Valoramos a cada individuo y sus contribuciones.</li>
+                                <li><strong>Tolerancia:</strong> Fomentamos un ambiente inclusivo y respetuoso.</li>
+                                <li><strong>No criticar:</strong> Preferimos el feedback constructivo para el crecimiento mutuo.</li>
+                                <li><strong>No señalar:</strong> Promovemos un ambiente libre de juicios y estigmas.</li>
+                                <li><strong>Escuchar puntos de vista:</strong> Valoramos la diversidad de opiniones para enriquecer nuestras decisiones.</li>
+                                <li><strong>Comunicación eficaz:</strong> Priorizamos la transparencia y la claridad en todas nuestras interacciones.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Visión</th>
+                        <td>Transformar el mercado ofreciendo productos de alta calidad que satisfagan las expectativas más exigentes de nuestros clientes, consolidándonos como líderes en innovación y compromiso con la excelencia.</td>
+                    </tr>
+                    <tr>
+                        <th>Misión</th>
+                        <td>En El Flip, nos comprometemos a crear productos frescos y distintivos, manteniendo estándares de calidad intransigentes. Valoramos la diversidad de opiniones y promovemos un ambiente de respeto y tolerancia. Nuestro objetivo es superar las expectativas de nuestros clientes mediante una comunicación eficaz y un servicio excepcional, sin comprometer nuestra filosofía de calidad en ningún momento.</td>
+                    </tr>
+                    <tr>
+                        <th>Historia del Flip</th>
+                        <td>El Flip fue fundado en 2017 con el sueño de crear productos de alta calidad en un espacio pequeño pero lleno de aspiraciones. Durante nuestros 8 años de trayectoria, nos hemos destacado por ofrecer productos frescos y distintivos que satisfacen las necesidades de nuestros clientes.</td>
+                    </tr>
+                    <tr>
+                        <th>Filosofía del Flip</th>
+                        <td>En El Flip, mantenemos un compromiso inquebrantable con la calidad, incluso en tiempos de crisis económica. Creemos que mantener estándares elevados es fundamental para nuestro éxito empresarial.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="video-container">
+                <h3> Nuestros proyectos de éxito con los clientes y las experiencias </h3>  
+                <div class="video-links">
+                    <a href="https://www.instagram.com/reel/C3B2lqEubk6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Clientes</a>
+                    <a href="https://www.instagram.com/reel/CvEDqtHuiAC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Proyectos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Seccion "Productos / Servicios" -->
+<section id="productos" class="section">
+    <div class="container">
+        <div class="section-content">
+            <h2>Productos / Servicios</h2>
+
+ <!-- Ventajas y características -->
+<div class="ventajas-caracteristicas">
+    <h3>Ventajas y Características</h3>
+    <ul>
+        <li><strong>Calidad Superior:</strong> Panes elaborados con ingredientes naturales y frescos.</li>
+        <li><strong>Variedad:</strong> Amplia gama de panes artesanales.</li>
+        <li><strong>Saludable:</strong> Sin preservantes.</li>
+        <li><strong>Personalización:</strong> Opciones de semillas y sabores adicionales sin costo.</li>
+    </ul>
+
+    <p><strong>Menú:</strong> <a href="https://drive.google.com/file/d/1MOaRoX9Em2TkPzlKgi9CXBqQPvq-g2Xu/view" target="_blank">Ver menú en Google Drive</a></p>
+    
+    <p>Compromiso con la Calidad:</p>
+    <p>Nuestros productos no contienen preservantes, garantizando frescura y sabor auténtico. La línea Premium, hecha con mantequilla Turrialba, huevos y leche, dura hasta 8 días a temperatura ambiente y 18 días en refrigeración. Otras líneas duran 5 días a temperatura ambiente y 12 días refrigeradas.</p>
+    <p>Descubre el sabor único del pan artesanal en FLIP. ¡Tu satisfacción es nuestra prioridad!</p>
+</div>
+
+            <!-- Galeria de imagenes -->
+            <div class="galeria">
+                <h3>Galería de Productos</h3>
+                <div class="grid-container">
+                    <div class="item">
+                        <img src="Pan Ciabatta.png" alt="Producto 1">
+                        <p>Descubre la experiencia de nuestro pan ciabatta para hamburguesas, con su textura única y sabor inconfundible, este pan artesanal añade un toque gourmet a tus creaciones culinarias.</p>
+                       
+                    </div>
+                    <div class="item">
+                        <img src="Pan Brioche Especial.jpeg" alt="Producto 2">
+                        <p>El pan Brioche para hamburguesa es uno de nuestros productos estrellas. </p>
+                       
+                    </div>
+                    <div class="item">
+                        <img src="Pan Bagels.png" alt="Producto 3">
+                        <p>Nuestros bagels de pan son la deliciosa combinación de un pan suave y una textura masticable única.</p>
+                    </div>
+                    <div class="item">
+                        <img src="Pan Flat.png" alt="Producto 4">
+                        <p>En El Flip te ofrecemos  el clásico y versátil pan flat</p>
+                    </div>
+                    <div class="item">
+                        <img src="Molde Brioche.png" alt="Producto 5">
+                        <p>Sumérgete en la exquisitez de nuestro pan de molde brioche! </p>
+                    </div>
+                    <div class="item">
+                        <img src="Baguette hogaza Masa madre.jpeg" alt="Producto 6">
+                        <p>No puedes perderte nuestra auténtica baguette hogaza de masa madre. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enlace a video de presentacion -->
+            <div class="video-presentacion">
+                <h3>Presentación de Nuestros Productos</h3>
+                <div class="links">
+                    <a href="https://www.instagram.com/reel/Cytlu7ERIu_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                      
+                        Video: #Responsabilidad
+                    </a>
+                    <a href="https://www.instagram.com/reel/CxqbQSpuvgD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                       
+                        Video: #SaborCostarricense
+                    </a>
+                    <a href="https://www.instagram.com/reel/Cw-PFvEIOt8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                       
+                        Video: #PasiónPorElPan 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Seccion "Contacto" -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2>Contacto</h2>
+
+                    <!-- Informacion de contacto -->
+                <div class="informacion-contacto">
+                    <h3>Información de Contacto</h3>
+                    <ul>
+                        <li><strong>Teléfono:</strong> +506 8348 7980</li>
+                        <li><strong>Dirección:</strong> Costa Rica. Ruta 108 - San Francisco, Goicoechea</li>
+                        <li><strong>Horarios:</strong> Lunes a Viernes: 6:00 AM - 3:00 PM</li>
+                    </ul>
+                </div>  
+
+                <!-- Formulario de contacto --> 
+                <div class="formulario-contacto">
+                    <h3>Formulario de Contacto</h3>
+                    <form action="#" method="POST">  <!-- El form inicia el formulario, el acticion es para donde va el formulario y el metodo POST es para enviar de manera segura  --> 
+                        <div class="input-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="input-group">
+                            <label for="motivo">Motivo de contacto:</label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="consulta">Consultar </option>
+                                <option value="soporte">Buscar trabajo</option>
+                                <option value="comentarios">Comentarios</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="mensaje">Mensaje:</label>  <!-- El ROWS 4 define la altura del cammpo --> 
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit">Enviar Mensaje</button>  <!-- El SUBMIT indica que este botón enviará el formulario cuando sea presionado--> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Seccion "Preguntas Frecuentes" -->
+<section id="preguntas-frecuentes" class="section">
+    <div class="container">
+        <div class="section-content">
+            <h2>Preguntas Frecuentes</h2>
+            <p>Respuestas a las preguntas más comunes sobre nuestros productos, procesos y servicios.</p>
+
+            <!-- Aqui vamos a usar un acordeon de Preguntas Frecuentes -->
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1">
+                    <label class="faq-question" for="faq1">¿Cuáles son los horarios de atención?</label>
+                    <div class="faq-answer">
+                        <p>Atendemos de Lunes a Viernes, de 9:00 AM a 5:00 PM.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2">
+                    <label class="faq-question" for="faq2">¿Dónde puedo ver el menú completo?</label>
+                    <div class="faq-answer">
+                        <p>Puedes ver nuestro menú completo en nuestro <a href="https://drive.google.com/file/d/1MOaRoX9Em2TkPzlKgi9CXBqQPvq-g2Xu/view" target="_blank">Google Drive</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3">
+                    <label class="faq-question" for="faq3">¿Qué tipos de panes ofrecen?</label>
+                    <div class="faq-answer">
+                        <p>Ofrecemos una amplia gama de panes artesanales incluyendo brioche, pan de papa, pan integral, masa madre y más.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq4">
+                    <label class="faq-question" for="faq4">¿Hacen entregas y cuál es el costo?</label>
+                    <div class="faq-answer">
+                        <p>Hacemos entregas a domicilio con un costo adicional que depende de la distancia y el tamaño del pedido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Seccion "Acerca de" -->
+<section id="acerca-de" class="section">
+    <div class="container">
+        <div class="section-content">
+            <h2>Acerca de</h2>
+
+            <!-- Información Mia -->
+            <div class="informacion-autor">
+                <div class="autor-info">
+                    <h3>Información del Autor</h3>
+                    <ul>
+                        <li><strong>Cédula:</strong> 118900337</li>
+                        <li><strong>Nombre:</strong> Jeremy Brenes Alvarado</li>
+                        <li><strong>Correo electrónico:</strong> jerepsba@gmail.com</li>
+                        <li><strong>Intereses:</strong> Programación, Diseño Web</li>
+                    </ul>
+                </div>
+
+                <!-- Foto de mi  -->
+                <div class="autor-foto">
+                    <img src="Yo.png" alt="Fotografía de Jeremy Brenes Alvarado">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+
+
+</main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <img src="Logo.jpeg" alt="Logo El Flip">
+                <p>Pan que da ritmo<br>Pan que da sabor</p>
+            </div>
+            <div class="contact-info">
+                <p>Teléfono: +506 8348 7980</p> 
+                <p>Correo Electrónico: yulianovargas03@gmail.com</p> 
+                <p>Dirección: </a>Costa Rica. Ruta 108 - San Francisco, Goicoechea</p> 
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/elflipcr?mibextid=LQQJ4d" target="_blank"><img src="facebook.png" alt="Facebook" class="social-icon"> Facebook</a>
+                <a href="https://www.instagram.com/elflip506/" target="_blank"><img src="logotipo-de-instagram.png" alt="Instagram" class="social-icon"> Instagram</a>
+                <a href="https://wa.me/50683487980" target="_blank"><img src="whatsApp.png" alt="WhatsApp" class="social-icon"> WhatsApp</a>
+                <a href="https://waze.com/ul?ll=9.94071,-84.07328&navigate=yes" target="_blank"> <img src="waze.png" alt="Waze" class="social-icon"> Waze </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EL FLIP. Todos los derechos reservados </p> 
+            <p>Términos & Condiciones </p> 
+           
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

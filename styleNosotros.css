@@ -1,0 +1,57 @@
+
+#nosotros .table-container {
+    margin-top: 30px;
+    overflow-x: auto; /* Para permitir desplazamiento horizontal en tablas anchas */
+}
+
+#nosotros .info-table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    margin: 0 auto; /* Centra la tabla */
+    background-color: #444444; 
+    color: #FFFFFF; 
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que  se desborda */
+}
+
+#nosotros .info-table th,
+#nosotros .info-table td {
+    padding: 15px; 
+    border: 1px solid #666666; 
+}
+
+#nosotros .info-table th {
+    background-color: #333333; /* Fondo gris mas oscuro para los encabezados */
+    text-align: left; 
+}
+
+#nosotros .info-table td {
+    text-align: justify; /* Justificar texto en celdas */
+}
+
+#nosotros .video-container {
+    margin-top: 30px;
+    text-align: center; 
+}
+
+#nosotros .video-links {
+    display: flex; /* Usar flexbox para alinear elementos de la fila */
+    gap: 40px; /* Espacio entre los enlaces */
+    justify-content: center; 
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en miltiples lineas si se lo neecsito  */
+}
+
+#nosotros .video-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #000000; 
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transicion al suave */
+}
+
+#nosotros .video-links a:hover {
+    background-color: #FFFFFF; /* Fondo blanco al pasar el cursor */
+    color: #000000;
+}
